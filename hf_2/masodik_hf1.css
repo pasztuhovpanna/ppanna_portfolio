@@ -1,0 +1,104 @@
+ body, html {
+  width: 100%;
+  font-family: "preconnect", ;
+ 
+  background-size: cover;
+}
+.bgimg {
+  background-position: cover;
+  max-width: 100%;
+  max-height:100% ;
+  
+}
+
+ h1 {
+  color: black;
+  background-color: #E9EFF4;
+  padding: 8px 0 8px 0;
+  font-size: 60px;
+ }
+
+ .gomb{
+  background-color: #E9E1DA;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 8px 8px 8px 8px;
+  margin: 8px 8px 8px 8px;
+  display: inline-block;
+ }
+
+ .gomb a{
+  text-decoration: none;
+  color: black;
+ }
+
+ .gomb:hover{
+  background-color: #AEC5D8;
+
+ }
+
+img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+ nav{
+  text-align: right;
+ }
+
+ .fotok{
+    display: inline-block;
+   
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+   max-width: 300px;
+   max-height: 300px;
+
+ }
+
+ h2{
+  position: absolute;
+  left: 150px;
+  background-color: #AEC5D8 ;
+  padding: 0 8px 0 8px;
+ }
+
+.profil{
+  display: inline-block;
+  height: 300px;
+  position: absolute;
+  right: 100px;
+}
+
+
+
+.szoveg{
+  position: absolute;
+  top: 500px;
+  right: 300px;
+  left: 50px;
+}
+
+.fotok1{
+  height: 300px;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  padding: 0 0 0 20px ;
+}
+
+.bemutatkozas{
+ 
+}
+
+.kapcs{
+  right: 50px;
+  display: block;
+  padding-left: 16px;
+  padding-top: 50px;
+}
+h4{
+  font-size: 25px;
+}

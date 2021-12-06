@@ -1,0 +1,252 @@
+/*
+	ZÁRTHELYI INFORMÁCIÓK
+
+BEUGRÓ
+	Adja meg az információ egységeit és átváltásukat a bit-től Tb-ig
+
+
+CSS
+	
+	- A css-ben leírtak szerint módosítsa az oldal kinézetét.
+	-Adja meg nevét és neptun kódját itt a CSS kódon belül
+
+	NÉV: 
+
+	NEPTUNKÓD:
+
+HTML
+	- A HTML-file-on belül a title legyen potzh_NEPTUNKÓD
+	- Kapcsolja hozzá a html-hez a mappában lévő css file-t
+	- egyéb kódót ne módosítson.
+
+	
+*/
+
+
+
+/*--feladat_1--*/
+	/*  - minden h3 háttérszíne legyen "seagreen"  
+		LEHET BÁRHOL
+	*/
+
+
+	/*  minden div kapjon
+			- 1px folytonos fekete keretet
+			- jobb oldalon 8px, bal oldalon 16px, fent 16px térközt a keret és a 
+			  tartalom között, egyéb helyeken legyen 0
+			- vízszintesen 20px, függőlegesen 5px-el távolodjon el a többi elemtől
+			- A bal alsó éllekerekítés legyen 16px egyéb helyeken 0
+		CSAK AZ 1-es FELADATON BELÜL
+	*/
+
+
+	/*  Paragrafusok
+			- a paragrafusok szövege legyen "darkred" színű
+			- az 1, 7, 10 és 11-es paragrafus szövege legyen "darkblue" színű
+			- a 2-es és a 3-as háttérszíne legyen "aqua" 1db SELCTOR segítségével
+			- az 5-ös paragrafus színe legyen "blue"
+		CSAK AZ 1-es FELADATON BELÜL
+	*/
+	
+
+	/*	8-as paragrafuson belül
+			-	a "vastag span kiemelt szöveg" 
+				háttérszíne legyen "springgreen"
+
+			- 	a böngésző által dőlt betűvel írt szöveg 
+				legyen vastagon kiemelve és 
+				legyen 3-szorosa a html betűméretének 
+				ha a paragrafus fölé visszük az egeret
+
+			-	A böngésző által vastag betűvel írt
+				szöveg legyen eltűntetve
+		
+		CSAK AZ 1-es FELADATON BELÜL
+	*/
+
+
+/*--feladat_1_vége--*/
+
+/*--feladat_2--*/
+	/*  Formázza kódot gombok mintájára. 
+		A gombok 			
+			- 2-es 3-as háttere legyen "steelblue", 1-es háttere legyen "darkred"
+			- lekerekítés legyen 14px
+			- keret és tartalom között vízszintesen 16px függőlegesen 8px
+			- kereten kívül térköz legyen körbe 6px
+
+			- ha bármelyik gombra ráviszük az egeret a gomb háttér színe legyen "black"
+			
+			- a szöveg legyen fehér nem aláhúzott
+
+			- kerüljenek egymás mellé úgy hogy ne használjon grid-et vagy flex-et
+			  ha pedig lecsökken a képernyő szélesség ugorjon új sorba.
+	*/ 
+
+
+
+/*--feladat_2_vége--*/
+
+/*--feladat_3--*/
+	/*  Készítse el a kártya kinézetet, majd rendezze őket
+		kép
+			- ne legyen szélesebb mint 150px
+			- legyen középre igazítva
+			- fölötte és alatta legyen 8px térköz
+			- kerete legyen folytonos 5px "black" színű
+			- sarkok lekerekítése legyen 20px
+
+		kártya
+			- háttérszín legyen "lightgrey"
+			- keretük legyen folytonos "black" színű 3px
+			- sarkok lekerekítése legyen 16px
+			- kereten belül legyen 8px térköz vízszintesen és
+				16px függőlegesen
+
+			- szöveg legyen középre igazítva
+
+			- kártyák kerüljenek egymás mellé rács rendszer segítségével.
+				A rács oszlop 
+					- száma legyen automatikus
+					- fixen legyen 300px
+				
+				2 kártya között függőlegesen és vízszintesen 
+				csak 1px rés legyen
+
+		span 
+			- szövege legyen vastag	
+	*/
+.kartya{	
+	vertical-align: top;
+	display: inline-block;
+	background-color: lightgrey;
+	border: 3px solid black;
+	border-radius: 16px;
+	padding: 8px 16px;
+	margin: 1px auto;
+	text-align: center;
+	max-width: 300px;
+}
+.kartya img{
+	max-height: 150px;
+	display: block;
+	margin: 8px auto;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+.kartya span{
+	font-weight: bolder;}
+
+/*--feladat_3_vége--*/
+
+/*--Feladat_4--*/
+	/*  készítse el a képen látható layoutot.
+
+		A 4. elem legyen eltüntetve
+
+		mindkettő tartalommal teli oszlop
+			- maximális szélessége legyen 250px 
+			- minimális szélessége legyen a leghoszabb szó szélessége
+		
+		minimális szélessége pedig mindkettőnek
+		a sortörés nélküli szöveg szélessége.
+
+		Ha a maximális szélességet eléri ne nőjön tovább a tartalommal teli oszlop. 
+		Figyeljen melyik elem hol található.
+
+	*/
+
+.elrendezes_burkolo{
+		display: grid;
+		grid-template-columns:1fr minmax(min-content, 150px) minmax(max-content, 300px) 1fr;
+		
+		grid-template-areas: 
+			". elem1 elem3 ."
+			". elem2 elem3 ."
+			".       elem4 ."
+			". elem5  ."
+		;
+	}
+
+	.elrendezes_elem1{
+		grid-area: elem1;
+	}
+	.elrendezes_elem2{
+		grid-area: elem2;
+	}
+	.elrendezes_elem3{
+		grid-area: elem3;
+	}
+	.elrendezes_elem4{
+		grid-area: elem4;
+	}
+	.elrendezes_elem5{
+		grid-area: elem5;
+	}
+
+
+/*--Feladat_4_end--*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--általános_kinézet--*/
+	body{
+		font-size: 16px;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	*, *::before, *::after{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	details{
+		background-color:#bee3db; 
+	margin: 1rem 1rem;
+	padding: .6rem 2rem .6rem .8rem;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,.5);
+		-moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,.5);
+		box-shadow: 1px 1px 10px 0px rgba(0,0,0,.5);
+	}
+	details:nth-child(even){
+		background-color:#89b0ae;
+	}  
+	details .feladat1, details .feladat{
+	margin: .7rem 0 .2rem 1rem;
+	border:1px solid black;
+	}
+	summary{
+	cursor: pointer;
+	font-weight: 700;
+	user-select: none;
+	}
+	details details, details details summary{
+		margin: 0;
+		padding: 0;
+		background-color: rgba(0,0,0,0) !important;
+		-webkit-box-shadow: 0px 0px 00px 0px rgba(0,0,0,0);
+		-moz-box-shadow: 0px 0px 00px 0px rgba(0,0,0,0);
+		box-shadow: 0px 0px 00px 0px rgba(0,0,0,0);
+		font-weight: normal;
+	}
+/*--általános_kinézet_vége--
