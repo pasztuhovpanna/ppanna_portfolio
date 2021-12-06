@@ -59,6 +59,8 @@ img{
  h2{
   position: absolute;
   left: 150px;
+  background-color: #AEC5D8 ;
+  padding: 0 8px 0 8px;
  }
 
 .profil{
@@ -87,7 +89,9 @@ h3{
   padding: 0 0 0 20px ;
 }
 
-
+.bemutatkozas{
+ 
+}
 
 .kapcs{
   right: 50px;
